@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Please fill out this survey to help us better understand your needs.</p>
+<form id="survey-form">
+    <fieldset>
+    <label for="name" id="name-label">Enter your name: <input type="text" id="name" name="name" required placeholder="Name"></label>
+    <label for="email" id="email-label">Enter your email: <input type="email" id="email" name="email" required placeholder="email"></label>
+    <label for="number" id="number-label">Enter a number betwixt 2 and 25: <input type="number" min="2" max="25" id="number" name="number" placeholder="Number"></label>
+    </fieldset>
+    <fieldset>
+        <label for="dropdown">
+            Choose your favorite food:
+            <select name="dropdown" id="dropdown">
+                <option value="">Choose one</option>
+                <option value="1">Hot dogs</option>
+                <option value="2">Hamburgers</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        Favorite way to consume media:
+        <label for="radio"><input type="radio" id="radio" name="mediaType" value="1">Radio</label>
+        <label for="TV"><input type="radio" id="TV" name="mediaType" value="2">Television</label>
+    </fieldset>
+    <fieldset>
+        Select your favorite pet(s):
+        <label for="dog"><input type="checkbox" id="dog" value="1"> Dogs</label>
+        <label for="cat"><input type="checkbox" id="cat" value="2"> Cats</label>
+        <label for="ferret"><input type="checkbox" id="ferret" value="3">Ferrets</label>
+    </fieldset>
+    <fieldset>
+        <label for="textarea">Additional comments: <textarea name="info" id="textarea" cols="30" rows="10"></textarea></label>
+    </fieldset>
+    <input type="submit" value="Submit" name="submit" id="submit">
+</form>
+</body>
